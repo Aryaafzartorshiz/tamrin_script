@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>tamrin </title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 50px;
+        }
+        input, button {
+            margin: 5px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #shoppingList {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>مدیریت لیست خرید</h1>
+    <div>
+        <!-- ورودی برای اضافه کردن مورد جدید -->
+        <input type="text" id="add" placeholder="مورد جدید را وارد کنید">
+        <button onclick="addItem()">اضافه کردن</button>
+    </div>
+    <div>
+        <!-- ورودی برای حذف کردن مورد -->
+        <input type="text" id="remove" placeholder="موردی که باید حذف شود">
+        <button onclick="removeItem()">حذف کردن</button>
+    </div>
+    <!-- دکمه برای نمایش لیست خرید -->
+    <button onclick="displayList()">نمایش لیست</button>
+    <!-- بخشی برای نمایش لیست خرید -->
+    <div id="shoppingList"></div>
+
+    <!-- ارجاع به فایل جاوا اسکریپت -->
+    <script src="script.js"></script>
+</body>
+</html>
